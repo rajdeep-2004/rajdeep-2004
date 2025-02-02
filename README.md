@@ -33,13 +33,14 @@
 
 &nbsp;&nbsp;
 ## 📊 GitHub Stats  
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" />
-</p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rajdeep-2004&show_icons=true&theme=radical" />
-</p>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" align="left"/>
+&nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api?username=rajdeep-2004&show_icons=true&theme=radical" align="right" />
+
+
+  <br>
+  <br>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajdeep-2004&layout=compact&theme=radical" />
