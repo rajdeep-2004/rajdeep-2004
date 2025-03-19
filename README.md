@@ -3,8 +3,6 @@
 <br>
 
 - 👨🏻‍💻 Full time Coder, Part time College Student
-  
-- 🔭 _I’m currently working on **MODELAI – AI-powered fashion assistant**
 
 - 🌱 _I’m currently learning **Web Development and Python**_
 
