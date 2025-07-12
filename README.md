@@ -2,8 +2,11 @@
 <a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
 
 👨🏻‍💻 B.Tech in Computer Science & Artificial Intelligence @ Newton School of Technology
+<br>
 🚀 Currently building **StudyBuddy** – a full-stack productivity platform for students  
+<br>
 📚 Learning Web Development, Python, and Product/Growth Strategy  
+<br>
 📫 Contact: rajdeepsanyal2024@gmail.com
 
 ## 🌐 Socials:
