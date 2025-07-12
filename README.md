@@ -1,7 +1,13 @@
 # 💫 About Me:
 <a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
-👨🏻‍💻 Full time Coder, Part time College Student<br><br>🌱 I’m currently learning Web Development and Python<br><br>👯 I’m looking to collaborate on SaaS Projects<br><br>📫 How to reach me rajdeepsanyal2024@gmail.com
 
+👨🏻‍💻 B.Tech in Computer Science & Artificial Intelligence @ Newton School of Technology (Batch 2028)  
+🚀 Currently building **StudyBuddy** – a full-stack productivity platform for students  
+🌐 Tech stack: React, Tailwind, Firebase (Auth, Firestore, Storage)  
+🧠 Focused on real-world problem solving, scalable systems, and product thinking  
+📚 Learning Web Development, Python, and Product/Growth Strategy  
+🤝 Open to internships, collaborations, and startup ideas  
+📫 Contact: rajdeepsanyal2024@gmail.com
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/rajdeepsanyal) 
