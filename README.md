@@ -1,21 +1,20 @@
 # 💫 About Me:
 
-<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
 
-<div style="flex: 1; min-width: 250px;">
-  
-👨🏻‍💻 Full time Coder, Part time College Student<br><br>
-🌱 I’m currently learning Web Development and Python<br><br>
-👯 I’m looking to collaborate on SaaS Projects<br><br>
-📫 How to reach me: rajdeepsanyal2024@gmail.com
+<div>
+<a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
+<br>
 
+- 👨🏻‍💻 Full time Coder, Part time College Student
+
+- 🌱 _I’m currently learning **Web Development and Python**_
+
+- 👯 _I’m looking to collaborate on **SaaS Projects**_
+
+- 📫 _How to reach me **rajdeepsanyal2024@gmail.com**_
 </div>
+<br>
 
-<div style="flex: 1; text-align: right; min-width: 250px;">
-  <img src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" alt="Coder GIF" width="350" height="250" />
-</div>
-
-</div>
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/rajdeepsanyal) 
