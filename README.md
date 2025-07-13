@@ -18,28 +18,20 @@
 
 <h2 align="center" >⚙️ Languages</h3>
 
-<div align="center">
-<a href="https://python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a> 
-  <br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a>
-  &nbsp;
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
-  <br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>&nbsp;&nbsp;&nbsp;
-<a href="https://react.dev/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a>&nbsp;&nbsp;&nbsp;
-<a href="https://www.java.com/en/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a>&nbsp;&nbsp;
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML5" style="height: 30px; border-radius: 8px;">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" style="height: 30px; border-radius: 8px;">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB" alt="React" style="height: 30px; border-radius: 8px;">
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white" alt="TailwindCSS" style="height: 30px; border-radius: 8px;">
+  <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python" style="height: 30px; border-radius: 8px;">
+</div>
+
 
 &nbsp;&nbsp;
 ## 📊 GitHub Stats  
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" align="left"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" align="center"/>
 &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api?username=rajdeep-2004&show_icons=true&theme=radical" align="right" />
+  
 
-
-  <br>
-  <br>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajdeep-2004&layout=compact&theme=radical" />
-</p>
+  
