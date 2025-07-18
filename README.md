@@ -16,7 +16,7 @@
 <br>
 <br>
 
-<h2 align="center" >⚙️ Languages</h3>
+<h2 align="center" >Languages</h3>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML5" style="height: 30px; border-radius: 8px;">
@@ -28,7 +28,7 @@
 
 
 &nbsp;&nbsp;
-## 📊 GitHub Stats  
+<h2 align="center" >Github Stats</h3>
 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" align="center"/>
 &nbsp;&nbsp;
