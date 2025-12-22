@@ -2,13 +2,14 @@
 <a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
 <br>
 
-- 👨🏻‍💻 Full time Coder, Part time College Student
+Aspiring Software Developer | CS & AI Undergraduate
 
-- 🌱 _I’m currently learning **Web Development and Python**_
+Building product-oriented systems and learning by shipping.
+Interested in SaaS and engineering-led startups.
 
-- 👯 _I’m looking to collaborate on **SaaS Projects**_
+Contact: rajdeepsanyal2024@gmail.com
 
-- 📫 _How to reach me **rajdeepsanyal2024@gmail.com**_
+
 </div
 
 <br>
