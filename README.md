@@ -30,7 +30,9 @@
 &nbsp;&nbsp;
 <h2 align="center" >Github Stats</h3>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=radical" align="center"/>
+  <img src="![rajdeep-2004's Stats](https://github-readme-stats.vercel.app/api?username=rajdeep-2004&theme=vue-dark&show_icons=true&hide_border=false&count_private=true)" align="center"/>
+  <img src="![rajdeep-2004's Streak](https://github-readme-streak-stats.herokuapp.com/?user=rajdeep-2004&theme=vue-dark&hide_border=false)" align="center"/>
+  <img src="![rajdeep-2004's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rajdeep-2004&theme=vue-dark&show_icons=true&hide_border=false&layout=compact)" align="center"/>
 &nbsp;&nbsp;
   
 
