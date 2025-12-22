@@ -1,5 +1,20 @@
-# 💫 About Me:
-🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+<div>
+<a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
+<br>
+
+- 👨🏻‍💻 Full time Coder, Part time College Student
+
+- 🌱 _I’m currently learning **Web Development and Python**_
+
+- 👯 _I’m looking to collaborate on **SaaS Projects**_
+
+- 📫 _How to reach me **rajdeepsanyal2024@gmail.com**_
+</div
+
+<br>
+<br>
+<br>
+<br>
 
 
 # 💻 Tech Stack:
