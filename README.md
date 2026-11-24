@@ -1,28 +1,122 @@
-<div>
-<a href="https://github.com/rajdeep-2004"><img alt="Coder GIF" height=250 width=350 src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" align="right" /></a>
-<br>
+<div align="center">
 
-Aspiring Software Developer | CS & AI Undergraduate
+<img src="assets/hero.svg" alt="Rajdeep Sanyal: I find the user problem. Then I ship the fix." width="100%" />
 
-Building product-oriented systems and learning by shipping.
-Interested in SaaS and engineering-led startups.
+<br/>
 
-Contact: rajdeepsanyal2024@gmail.com
+<a href="https://www.linkedin.com/in/rajdeepsanyal/"><img src="https://img.shields.io/badge/LinkedIn-rajdeepsanyal-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:rajdeepsanyal2024@gmail.com"><img src="https://img.shields.io/badge/Email-say%20hi-FF8A5B?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://strata-rose.vercel.app"><img src="https://img.shields.io/badge/Try-Strata-FFC857?style=flat-square&logo=vercel&logoColor=black" alt="Try Strata"/></a>
 
+</div>
 
-</div
+## 👋 Hey, I'm Rajdeep
 
-<br>
-<br>
-<br>
-<br>
+I love building products. Not features for their own sake, but things that make one person's
+annoying problem go away. Most of what's on this profile started as *"why is this so hard?"*,
+became a one-page spec, and ended up shipped.
 
+```text
+how I build
+├── start with the user      → who hurts, and how do I know?
+├── write it down            → PRD, success metric, and what I'm NOT building
+├── ship one flow end to end → web, mobile, desktop, API, whatever it takes
+└── check if it worked       → then decide what's next
+```
 
-# 💻 Tech Stack:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=rajdeep-2004&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=rajdeep-2004&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=rajdeep-2004&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+## 🚀 Things I've shipped
 
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔎 [Strata](https://github.com/rajdeep-2004/strata)
+**Ask any GitHub repo a question, get answers cited to the file and line.**
+
+**Problem:** I kept getting lost in open-source codebases, and existing tools only cover
+pre-indexed repos.
+**Built:** a RAG assistant for *any* repo, public or private, that answers only from retrieved
+code and says "I don't know" instead of guessing.
+
+`Next.js` `Gemini` `Qdrant` `MongoDB`
+<br/>[**Live demo →**](https://strata-rose.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+### 📝 [Proctra](https://github.com/rajdeep-2004/proctra)
+**Timed exams on macOS that stay fair without being creepy.**
+
+**Problem:** exam tools either can't be trusted or treat students like suspects.
+**Built:** custom marking, live leaderboard, crash-proof autosave and server-enforced timing.
+No webcam video, no "suspicion score".
+
+`Next.js` `Electron` `MongoDB`
+<br/>[**Live →**](https://proctra-mu.vercel.app) · [**macOS app →**](https://github.com/rajdeep-2004/proctra/releases/latest)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🌙 [Luna 月](https://github.com/rajdeep-2004/luna)
+**A pocket dojo for engineers.**
+
+**Problem:** practising engineering judgment is boring, so nobody does it daily.
+**Built:** five-minute fights with real code: predict the output, slay the buggy line, survive
+a production incident, duel friends, climb from *Deshi* to *Shogun*.
+
+`Expo` `React Native` `Express` `MongoDB`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎧 [JMusic](https://github.com/rajdeep-2004/jmusic)
+**Stream Creative Commons music without leaving the terminal.**
+
+**Problem:** switching to a browser tab for music breaks focus.
+**Built:** a keyboard-driven TUI that searches the Jamendo catalogue and plays through a
+headless VLC, with a single runtime dependency.
+
+`TypeScript` `Node.js`
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 💬 [Loop](https://github.com/rajdeep-2004/loop) &nbsp;<sub>`building now`</sub>
+**Campus chat that mirrors how a university is really organised: schools, programs, years and clubs.**
+Idempotent sends, an offline outbox with retry, read markers, presence and typing. &nbsp;`Expo` `Fastify` `Socket.IO` `MongoDB`
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>🧪 Curious side quests</b></summary>
+<br/>
+
+- **[Handcrafted, Learned, or Both?](https://github.com/rajdeep-2004/fashion-image-classification-benchmark)**: a
+  leak-free ML study. A 241k-parameter CNN beats tuned HOG + SVM (92.09% vs 91.08%) at ~300× the speed.
+- **[DualPath](https://github.com/rajdeep-2004/dualpath)**: Harvard vs shared-memory CPU design, compared cycle by
+  cycle in Verilog.
+
+</details>
+
+## 🧰 What I build with
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,py,react,nextjs,nodejs,express,mongodb,redis,tailwind,electron,docker,vercel,githubactions,pytorch,figma&perline=8" alt="TypeScript, JavaScript, Python, React, Next.js, Node.js, Express, MongoDB, Redis, Tailwind, Electron, Docker, Vercel, GitHub Actions, PyTorch, Figma"/>
+</p>
+
+## 📈 Shipping log
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=rajdeep-2004&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=ffc857&icon_color=ff8a5b" alt="GitHub stats"/>
+  <img height="165" src="https://nirzak-streak-stats.vercel.app/?user=rajdeep-2004&theme=tokyonight&hide_border=true&background=0b0f19&ring=ff8a5b&fire=ffc857&currStreakLabel=ffc857" alt="GitHub streak"/>
+</p>
+
+<div align="center">
+<sub>Have a problem worth solving? I'd love to hear about it.</sub>
+</div>
