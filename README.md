@@ -7,7 +7,6 @@
 <a href="https://www.linkedin.com/in/rajdeepsanyal/"><img src="https://img.shields.io/badge/LinkedIn-rajdeepsanyal-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:rajdeepsanyal24@gmail.com"><img src="https://img.shields.io/badge/Email-rajdeepsanyal24-D9442B?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 <a href="https://strata-rose.vercel.app"><img src="https://img.shields.io/badge/Try-Strata-F2A93B?style=flat-square&logo=vercel&logoColor=black" alt="Try Strata"/></a>
-<a href="https://blackbox.devclubxnst.com/"><img src="https://img.shields.io/badge/Try-Blackbox-1B1820?style=flat-square&logo=googlechrome&logoColor=white" alt="Try Blackbox"/></a>
 
 </div>
 
@@ -73,21 +72,6 @@ survive a production incident, duel friends, climb from *Deshi* to *Shogun*.
 </td>
 <td width="50%" valign="top">
 
-### [Blackbox](https://blackbox.devclubxnst.com/)
-**A campus learning platform for first-years lost in random online courses.**
-
-**Problem:** new students don't know what to learn, or in what order.<br/>
-**Shaped:** 4 curriculums and 681 curated resources, then led the launch outreach.
-**100+ students** onboarded and **58 curriculum enrollments** so far.
-
-`Product` `Launch` `Campus GTM`
-<br/>[**Live →**](https://blackbox.devclubxnst.com/)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 ### [JMusic](https://github.com/rajdeep-2004/jmusic)
 **Stream Creative Commons music without leaving the terminal.**
 
@@ -98,7 +82,9 @@ with one runtime dependency.
 `TypeScript` `Node.js`
 
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td colspan="2" valign="top">
 
 ### [Loop](https://github.com/rajdeep-2004/loop) &nbsp;<sub>`building now`</sub>
 **Campus chat shaped like the university really is.**
