@@ -1,5 +1,7 @@
 # Draws the contribution-graph snake shown in README.md.
-# Runs daily and on demand; pushes the generated SVGs to the `output` branch.
+# Runs daily, on demand, and on any push (any branch) that changes this file or
+# the README, so a fresh setup draws the snake before it is merged.
+# Pushes the generated SVGs to the `output` branch.
 name: contribution snake
 
 on:
@@ -7,7 +9,7 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches: [main]
+    paths: [".github/workflows/snake.yml", "README.md"]
 
 permissions:
   contents: write
