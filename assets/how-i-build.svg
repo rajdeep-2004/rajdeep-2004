@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="How I build: find the user, write it down, ship one flow, measure it">
+  <title>How I build: find the user, write it down, ship one flow, measure it</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0c11"/><stop offset="1" stop-color="#17141c"/></linearGradient>
+    <linearGradient id="heat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0"><stop offset="0" stop-color="#d9442b"/><stop offset="1" stop-color="#f2a93b"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#fff" stroke-opacity="0.035"/></pattern>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .fade { animation: rise 0.8s ease-out both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+      .draw { stroke-dasharray: 1; animation: draw 1.4s cubic-bezier(.6,.05,.3,1) both; }
+      @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+      .pulse { animation: pulse 6s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { stroke-opacity: 0.35; } 6% { stroke-opacity: 1; stroke-width: 4; } 25% { stroke-opacity: 0.35; stroke-width: 2; } }
+    </style>
+  </defs>
+  <rect width="1200" height="250" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="250" rx="18" fill="url(#grid)"/>
+  <path d="M60 62H1140" stroke="#2a2230" stroke-width="2" stroke-dasharray="3 7"/>
+  <path class="draw" pathLength="1" d="M60 62H1140" stroke="url(#heat)" stroke-width="2.5" style="animation-duration:2.4s"/>
+  <g class="fade" style="animation-delay:0.30s">
+    <rect x="20" y="96" width="275" height="134" rx="14" fill="#141119" stroke="#2a2230" stroke-width="1.5"/>
+    <text x="42" y="138" class="sans" font-size="25" font-weight="800" fill="#efe6d8">Find the user</text>
+    <text x="42" y="174" class="sans" font-size="18" fill="#b4adbd">who hurts, and how</text>
+    <text x="42" y="200" class="sans" font-size="18" fill="#b4adbd">do I know?</text>
+  </g>
+  <g transform="translate(60 62)">
+    <circle class="pulse" style="animation-delay:0.0s" r="24" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+    <text y="6" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#f2a93b">01</text>
+  </g>
+  <g class="fade" style="animation-delay:0.65s">
+    <rect x="315" y="96" width="275" height="134" rx="14" fill="#141119" stroke="#2a2230" stroke-width="1.5"/>
+    <text x="337" y="138" class="sans" font-size="25" font-weight="800" fill="#efe6d8">Write it down</text>
+    <text x="337" y="174" class="sans" font-size="18" fill="#b4adbd">PRD, success metric,</text>
+    <text x="337" y="200" class="sans" font-size="18" fill="#b4adbd">and the non-goals</text>
+  </g>
+  <g transform="translate(355 62)">
+    <circle class="pulse" style="animation-delay:1.5s" r="24" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+    <text y="6" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#f2a93b">02</text>
+  </g>
+  <g class="fade" style="animation-delay:1.00s">
+    <rect x="610" y="96" width="275" height="134" rx="14" fill="#141119" stroke="#2a2230" stroke-width="1.5"/>
+    <text x="632" y="138" class="sans" font-size="25" font-weight="800" fill="#efe6d8">Ship one flow</text>
+    <text x="632" y="174" class="sans" font-size="18" fill="#b4adbd">end to end: web, mobile,</text>
+    <text x="632" y="200" class="sans" font-size="18" fill="#b4adbd">desktop, API</text>
+  </g>
+  <g transform="translate(650 62)">
+    <circle class="pulse" style="animation-delay:3.0s" r="24" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+    <text y="6" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#f2a93b">03</text>
+  </g>
+  <g class="fade" style="animation-delay:1.35s">
+    <rect x="905" y="96" width="275" height="134" rx="14" fill="#141119" stroke="#2a2230" stroke-width="1.5"/>
+    <text x="927" y="138" class="sans" font-size="25" font-weight="800" fill="#efe6d8">Measure it</text>
+    <text x="927" y="174" class="sans" font-size="18" fill="#b4adbd">did it work? then</text>
+    <text x="927" y="200" class="sans" font-size="18" fill="#b4adbd">decide what's next</text>
+  </g>
+  <g transform="translate(945 62)">
+    <circle class="pulse" style="animation-delay:4.5s" r="24" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+    <text y="6" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#f2a93b">04</text>
+  </g>
+  <circle r="6" cy="62" fill="#f2a93b">
+    <animate attributeName="cx" values="60;1140" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1160" y="68" text-anchor="end" class="mono" font-size="14" fill="#8f8799" letter-spacing="2">↺</text>
+</svg>

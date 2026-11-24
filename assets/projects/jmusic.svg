@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" role="img" aria-label="JMusic: Stream Creative Commons music without leaving the terminal.">
+  <title>JMusic: Stream Creative Commons music without leaving the terminal.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0c11"/><stop offset="1" stop-color="#17141c"/></linearGradient>
+    <linearGradient id="heat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0"><stop offset="0" stop-color="#d9442b"/><stop offset="1" stop-color="#f2a93b"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#fff" stroke-opacity="0.035"/></pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#a8c686" stop-opacity="0.22"/><stop offset="1" stop-color="#a8c686" stop-opacity="0"/></radialGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .fade { animation: rise 0.8s ease-out both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+      .draw { stroke-dasharray: 1; animation: draw 1.4s cubic-bezier(.6,.05,.3,1) both; }
+      @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+      .bar { transform-box: fill-box; transform-origin: bottom; animation: eq 1.2s ease-in-out infinite; }
+      @keyframes eq { 0%, 100% { transform: scaleY(0.25); } 50% { transform: scaleY(1); } }
+    </style>
+  </defs>
+  <rect width="600" height="260" rx="16" fill="url(#bg)"/>
+  <rect width="600" height="260" rx="16" fill="url(#grid)"/>
+  <circle cx="470" cy="130" r="150" fill="url(#glow)"/>
+  <rect x="0.75" y="0.75" width="598.5" height="258.5" rx="15.5" fill="none" stroke="#a8c686" stroke-opacity="0.35" stroke-width="1.5"/>
+  <g transform="translate(470 130)">
+    <rect x="-112" y="-88" width="224" height="170" rx="10" fill="#141119" stroke="#2a2230" stroke-width="1.5"/>
+    <circle cx="-96" cy="-74" r="4" fill="#d9442b"/><circle cx="-84" cy="-74" r="4" fill="#f2a93b"/><circle cx="-72" cy="-74" r="4" fill="#a8c686"/>
+    <g transform="translate(0 4)"><rect class="bar" style="animation-delay:-0.00s" x="-92" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.37s" x="-72" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.74s" x="-52" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-1.11s" x="-32" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.28s" x="-12" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.65s" x="8" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-1.02s" x="28" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.19s" x="48" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.56s" x="68" y="-50" width="12" height="70" rx="3" fill="#a8c686"/><rect class="bar" style="animation-delay:-0.93s" x="88" y="-50" width="12" height="70" rx="3" fill="#a8c686"/></g>
+    <text x="-96" y="62" class="mono" font-size="12" fill="#a8c686">▶ now playing  02:14</text>
+  </g>
+  <g class="fade">
+    <text x="32" y="50" class="mono" font-size="14" fill="#a8c686" letter-spacing="3">CLI · TUI</text>
+    <text x="30" y="118" class="sans" font-size="54" font-weight="800" fill="#efe6d8" letter-spacing="-1">JMusic</text>
+  </g>
+  <g class="fade" style="animation-delay:0.3s">
+    <text x="32" y="162" class="sans" font-size="20" fill="#b4adbd">Stream Creative Commons music</text>
+    <text x="32" y="190" class="sans" font-size="20" fill="#b4adbd">without leaving the terminal.</text>
+  </g>
+  <rect x="32" y="214" width="56" height="4" rx="2" fill="#a8c686"/>
+</svg>
