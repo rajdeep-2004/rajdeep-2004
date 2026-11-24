@@ -1,79 +1,203 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="t d">
   <title id="t">Rajdeep Sanyal, product builder</title>
-  <desc id="d">I find the user problem, write the spec, and ship the product. A dot loops from problem to spec to shipped.</desc>
+  <desc id="d">An ink-and-paper banner. A brushed enso circle links three kanji: 問 user problem, 書 the spec, 出 shipped. A red sun sits behind it, a katana underlines the name, and petals drift down.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f19"/>
-      <stop offset="1" stop-color="#151a2e"/>
+      <stop offset="0" stop-color="#0d0c11"/>
+      <stop offset="1" stop-color="#17141c"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff8a5b"/>
-      <stop offset="1" stop-color="#ffc857"/>
+      <stop offset="0" stop-color="#f2a93b"/>
+      <stop offset="1" stop-color="#ffd27a"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ff8a5b" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#ff8a5b" stop-opacity="0"/>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfd3dc"/>
+      <stop offset="0.85" stop-color="#f4f1ea"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e0502f"/>
+      <stop offset="1" stop-color="#b8321c"/>
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d9442b" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#d9442b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waveFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="waveMask"><rect x="0" y="300" width="1200" height="100" fill="url(#waveFade)"/></mask>
+    <!-- seigaiha: overlapping wave arcs -->
+    <pattern id="seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#efe6d8" stroke-opacity="0.09" stroke-width="1.2">
+        <path d="M0 24a24 24 0 0 1 48 0M8 24a16 16 0 0 1 32 0M16 24a8 8 0 0 1 16 0"/>
+        <path d="M-24 12a24 24 0 0 1 48 0M-16 12a16 16 0 0 1 32 0M-8 12a8 8 0 0 1 16 0"/>
+        <path d="M24 12a24 24 0 0 1 48 0M32 12a16 16 0 0 1 32 0M40 12a8 8 0 0 1 16 0"/>
+      </g>
     </pattern>
+    <!-- rough brush edge for the enso -->
+    <filter id="brush" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="7"/>
+    </filter>
+    <!-- paper grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+    <path id="petal" d="M0 -7C5 -6 7 -1 4 4 2 7 -2 7 -4 4 -7 -1 -5 -6 0 -7Z"/>
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .fade { animation: in 0.8s ease-out both; }
-      .f1 { animation-delay: 0.1s; } .f2 { animation-delay: 0.5s; } .f3 { animation-delay: 0.9s; } .f4 { animation-delay: 1.3s; }
-      @keyframes in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-      .caret { animation: blink 1.1s steps(1) infinite; }
-      @keyframes blink { 50% { opacity: 0; } }
-      .node { animation: pulse 6s ease-in-out infinite; }
+      .jp { font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif CJK JP", "Noto Serif JP", "MS Mincho", serif; }
+
+      .fade { animation: rise 0.9s ease-out both; }
+      .f1 { animation-delay: 0.1s; } .f2 { animation-delay: 0.4s; } .f3 { animation-delay: 1.1s; } .f4 { animation-delay: 1.4s; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+      .draw { stroke-dasharray: 1; animation: draw 1.8s cubic-bezier(.6,.05,.3,1) 0.3s both; }
+      .draw2 { stroke-dasharray: 1; animation: draw 0.6s ease-out 0.3s both; }
+      @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+
+      .unsheathe { animation: unsheathe 0.7s cubic-bezier(.2,.8,.2,1) 0.8s both; }
+      @keyframes unsheathe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+      .glint { animation: glint 5s ease-in-out 2s infinite; }
+      @keyframes glint { 0% { transform: translateX(0); opacity: 0; } 5% { opacity: 1; } 22% { transform: translateX(380px); opacity: 0; } 100% { transform: translateX(380px); opacity: 0; } }
+
+      .stamp { transform-box: fill-box; transform-origin: center; animation: stamp 0.35s cubic-bezier(.3,1.6,.5,1) 1.6s both; }
+      @keyframes stamp { from { opacity: 0; transform: scale(1.8) rotate(-4deg); } to { opacity: 1; transform: scale(1) rotate(-4deg); } }
+
+      .node { animation: lit 6s ease-in-out infinite; }
       .n2 { animation-delay: 2s; } .n3 { animation-delay: 4s; }
-      @keyframes pulse { 0%, 100% { stroke-opacity: 0.25; } 10% { stroke-opacity: 1; } 30% { stroke-opacity: 0.25; } }
-      @media (prefers-reduced-motion: reduce) { .fade, .caret, .node { animation: none; opacity: 1; } }
+      @keyframes lit { 0%, 100% { stroke-opacity: 0.35; } 8% { stroke-opacity: 1; } 30% { stroke-opacity: 0.35; } }
+
+
+      @media (prefers-reduced-motion: reduce) {
+        .fade, .draw, .draw2, .unsheathe, .glint, .stamp, .node { animation: none; }
+        .glint { opacity: 0; }
+      }
     </style>
   </defs>
 
-  <rect width="1200" height="380" rx="20" fill="url(#bg)"/>
-  <rect width="1200" height="380" rx="20" fill="url(#grid)"/>
-  <circle cx="930" cy="190" r="220" fill="url(#glow)"/>
+  <!-- ground -->
+  <rect width="1200" height="400" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="20" fill="url(#seigaiha)" mask="url(#waveMask)"/>
+  <rect width="1200" height="400" rx="20" filter="url(#grain)"/>
+
+  <!-- vertical text: "make it, deliver it" -->
+  <text x="1158" y="44" class="jp" font-size="17" fill="#efe6d8" fill-opacity="0.28" writing-mode="tb" letter-spacing="6">作って、届ける。</text>
+
+  <!-- right: sun + enso build loop -->
+  <circle cx="1030" cy="122" r="170" fill="url(#sunGlow)"/>
+  <circle cx="1030" cy="122" r="84" fill="url(#sun)" opacity="0.92"/>
+
+  <g transform="translate(880 205)">
+    <g filter="url(#brush)" fill="none" stroke="#efe6d8" stroke-linecap="round">
+      <!-- 330° sweep, gap between 出 and 問 -->
+      <path class="draw" pathLength="1" d="M-41 -115.5A122 122 0 1 1 -93.5 -78.4" stroke-width="9"/>
+      <!-- heavier ink where the brush first lands -->
+      <path class="draw2" pathLength="1" d="M-41 -115.5A122 122 0 0 1 41 -115.5" stroke-width="15"/>
+    </g>
+
+    <!-- invisible track for the travelling ember -->
+    <path id="track" d="M0 -122A122 122 0 1 1 -0.01 -122" fill="none"/>
+    <circle r="6" fill="#f2a93b">
+      <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#track"/></animateMotion>
+    </circle>
+
+    <g transform="translate(0 -122)">
+      <circle class="node" r="30" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+      <text y="9" text-anchor="middle" class="jp" font-size="27" font-weight="700" fill="#efe6d8">問</text>
+      <text y="-42" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#efe6d8">user problem</text>
+    </g>
+    <g transform="translate(105.7 61)">
+      <circle class="node n2" r="30" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+      <text y="9" text-anchor="middle" class="jp" font-size="27" font-weight="700" fill="#efe6d8">書</text>
+      <text y="54" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#efe6d8">the spec</text>
+    </g>
+    <g transform="translate(-105.7 61)">
+      <circle class="node n3" r="30" fill="#141119" stroke="#f2a93b" stroke-width="2"/>
+      <text y="9" text-anchor="middle" class="jp" font-size="27" font-weight="700" fill="#efe6d8">出</text>
+      <text y="54" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#efe6d8">shipped</text>
+    </g>
+    <text y="-4" text-anchor="middle" class="jp" font-size="15" fill="#efe6d8" fill-opacity="0.5">繰り返す</text>
+    <text y="16" text-anchor="middle" class="mono" font-size="11" fill="#8f8799" letter-spacing="2">REPEAT</text>
+  </g>
 
   <!-- left: copy -->
   <g class="fade f1">
-    <text x="64" y="86" class="mono" font-size="15" fill="#8b93b0" letter-spacing="1">~/rajdeep-2004 <tspan fill="#ffc857">$</tspan> whoami<tspan class="caret" fill="#ffc857"> ▍</tspan></text>
+    <text x="66" y="72" class="mono" font-size="13" fill="#8f8799" letter-spacing="4">職人  ·  SHOKUNIN  ·  PRODUCT BUILDER</text>
   </g>
   <g class="fade f2">
-    <text x="62" y="158" class="sans" font-size="52" font-weight="800" fill="#f4f5fa">Rajdeep Sanyal</text>
+    <text x="62" y="142" class="sans" font-size="56" font-weight="800" fill="#f6f2ea" letter-spacing="-1">Rajdeep Sanyal</text>
   </g>
+
+  <!-- hanko seal: 創 (create) -->
+  <g class="stamp">
+    <rect x="474" y="98" width="46" height="46" rx="7" fill="#d9442b"/>
+    <rect x="478" y="102" width="38" height="38" rx="5" fill="none" stroke="#f6f2ea" stroke-opacity="0.85" stroke-width="1.5"/>
+    <text x="497" y="131" text-anchor="middle" class="jp" font-size="26" font-weight="700" fill="#f6f2ea">創</text>
+  </g>
+
+  <!-- katana underline -->
+  <g class="unsheathe">
+    <rect x="66" y="166" width="62" height="8" rx="2" fill="#2a2230"/>
+    <path d="M70 166l6 8M80 166l6 8M90 166l6 8M100 166l6 8M110 166l6 8M120 166l6 8M76 166l-6 8M86 166l-6 8M96 166l-6 8M106 166l-6 8M116 166l-6 8M126 166l-6 8" stroke="#d9442b" stroke-opacity="0.75" stroke-width="1.2"/>
+    <ellipse cx="132" cy="170" rx="4" ry="10" fill="#f2a93b"/>
+    <path d="M137 167.2L470 165.4Q500 165.6 516 171.2L137 172.8Z" fill="url(#blade)"/>
+    <path d="M137 169.4L480 167.6" stroke="#9aa0ad" stroke-opacity="0.6" stroke-width="0.8"/>
+  </g>
+  <rect class="glint" x="137" y="164" width="60" height="10" fill="url(#glint)" opacity="0"/>
+
   <g class="fade f3">
-    <text x="64" y="208" class="sans" font-size="26" font-weight="600" fill="url(#accent)">I find the user problem. Then I ship the fix.</text>
+    <text x="66" y="220" class="sans" font-size="26" font-weight="700" fill="url(#accent)">I find the user problem. Then I ship the fix.</text>
   </g>
   <g class="fade f4">
-    <text x="64" y="256" class="sans" font-size="17" fill="#aab1c9">Product builder · CS &amp; AI undergrad · New Delhi</text>
-    <text x="64" y="284" class="sans" font-size="17" fill="#aab1c9">Spec it, build it end to end, measure if it worked.</text>
-    <rect x="64" y="312" width="214" height="34" rx="17" fill="#ff8a5b" fill-opacity="0.12" stroke="#ff8a5b" stroke-opacity="0.5"/>
-    <text x="171" y="334" text-anchor="middle" class="mono" font-size="13" fill="#ffb38f">open to PM / AI PM roles</text>
+    <text x="66" y="262" class="sans" font-size="17" fill="#b4adbd">CS &amp; AI undergrad · Newton School of Technology · New Delhi</text>
+    <text x="66" y="290" class="sans" font-size="17" fill="#b4adbd">Spec it, build it end to end, measure if it worked.</text>
+    <rect x="66" y="318" width="218" height="34" rx="6" fill="#d9442b" fill-opacity="0.14" stroke="#d9442b" stroke-opacity="0.7"/>
+    <text x="175" y="340" text-anchor="middle" class="mono" font-size="13" fill="#ffb59f">open to PM / AI PM roles</text>
   </g>
 
-  <!-- right: the build loop -->
-  <g transform="translate(930 190)">
-    <path id="loop" d="M0 -110 A110 110 0 1 1 -0.01 -110" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="4 8"/>
-    <circle r="7" fill="#ffc857">
-      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#loop"/>
-      </animateMotion>
-    </circle>
-
-    <g transform="translate(0 -110)">
-      <rect class="node" x="-78" y="-22" width="156" height="44" rx="12" fill="#11162a" stroke="#ffc857" stroke-width="1.5"/>
-      <text y="6" text-anchor="middle" class="sans" font-size="15" font-weight="600" fill="#f4f5fa">① user problem</text>
-    </g>
-    <g transform="translate(95 55)">
-      <rect class="node n2" x="-62" y="-22" width="124" height="44" rx="12" fill="#11162a" stroke="#ffc857" stroke-width="1.5"/>
-      <text y="6" text-anchor="middle" class="sans" font-size="15" font-weight="600" fill="#f4f5fa">② the spec</text>
-    </g>
-    <g transform="translate(-95 55)">
-      <rect class="node n3" x="-62" y="-22" width="124" height="44" rx="12" fill="#11162a" stroke="#ffc857" stroke-width="1.5"/>
-      <text y="6" text-anchor="middle" class="sans" font-size="15" font-weight="600" fill="#f4f5fa">③ shipped</text>
-    </g>
-    <text y="6" text-anchor="middle" class="mono" font-size="13" fill="#8b93b0">repeat</text>
+  <!-- sakura petals -->
+  <g fill="#f4b6c2">
+    <g opacity="1"><g>
+      <animateTransform attributeName="transform" type="translate" from="700 -30" to="520 440" dur="13s" begin="-2s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.3s" begin="-2s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.8"><g>
+      <animateTransform attributeName="transform" type="translate" from="820 -30" to="640 440" dur="11s" begin="-7s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.7s" begin="-7s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="1"><g>
+      <animateTransform attributeName="transform" type="translate" from="980 -30" to="800 440" dur="15s" begin="-4s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.0s" begin="-4s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.9"><g>
+      <animateTransform attributeName="transform" type="translate" from="1120 -30" to="940 440" dur="12s" begin="-9s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="4.0s" begin="-9s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.7"><g>
+      <animateTransform attributeName="transform" type="translate" from="600 -30" to="420 440" dur="14s" begin="-11s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="4.7s" begin="-11s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.8"><g>
+      <animateTransform attributeName="transform" type="translate" from="1060 -30" to="880 440" dur="10s" begin="-1s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="3.3s" begin="-1s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.6"><g>
+      <animateTransform attributeName="transform" type="translate" from="900 -30" to="720 440" dur="16s" begin="-13s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="5.3s" begin="-13s" repeatCount="indefinite"/></use>
+    </g></g>
+    <g opacity="0.9"><g>
+      <animateTransform attributeName="transform" type="translate" from="760 -30" to="580 440" dur="12s" begin="-5s" repeatCount="indefinite"/>
+      <use href="#petal"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="4.0s" begin="-5s" repeatCount="indefinite"/></use>
+    </g></g>
   </g>
 </svg>
